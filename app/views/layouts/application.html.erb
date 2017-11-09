@@ -6,11 +6,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render "layouts/bootstrap" %>
   </head>
-
   <body>
-    <a href="/pages/about">About</a> | <a href="/pages/contact">Contact</a>
+    <%= render "layouts/navbar"%>
     <%= yield %>
-    <p>Copyright Christine de la Fuente</p>
+    <%= render "layouts/footer" %>
   </body>
 </html>
