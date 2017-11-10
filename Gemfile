@@ -7,7 +7,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'sqlite3'
+gem 'pg'
 gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
@@ -16,13 +17,14 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'carrierwave', '~> 1.0'
-gem 'pg', group: :production
+gem "mini_magick"
 
 
 
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
 end
@@ -35,5 +37,4 @@ group :development do
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rails_12factor', group: :production
 
