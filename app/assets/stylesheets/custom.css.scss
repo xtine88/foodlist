@@ -1,10 +1,17 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
 .jumbotron {
-  background-color: blue;
-  color: white;
-  border: 1px solid #f2cb3b;
+  background-color: #4B0082;
+  border: 1px solid #DBD5B5;
+  border-radius: 50px;
   h2{
-    color: white;
+    color: #DBD5B5;
     font-weight: bold;
   }
+}
+
+.flexbox{
+  display: flex;
 }
 
